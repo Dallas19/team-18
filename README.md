@@ -12,3 +12,4 @@ Elisha Mabaje
 Dominick Miller 
 Joseph Chang
 John Gizdich
+https://render.bitstrips.com/v2/cpanel/9900e206-8e57-4079-846e-23178d0164c3-23a366b9-0855-40b2-960b-76c58dae8f17-v1.png?transparent=1&palette=1

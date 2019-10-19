@@ -3,25 +3,37 @@ import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 
 public class LogPage {
+    ArrayList<logLine> content;
 
     public LogPage() {
-        ArrayList<logLine> content = new ArrayList<logLine>();
+        this.content = new ArrayList<logLine>();
     }
 
-    public static class logLine {
-        Date date;
+    static class logLine {
+        String date;
         String Category;
 
         public logLine(String Category){
 
             DateTimeFormatter dtf =  DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
-            logLine.date = dtf.format(LocalDateTime.now());
-            logLine.Category = Category; // might be a problem
+            date = dtf.format(LocalDateTime.now());
+            this.Category = Category; // might be a problem
         }
     }
 
     // adds log line with current time
-    public addLogLine(String Category) {
-        LogPage.content.add(new logLine(Category));
+    public void addLogLine(String Category) {
+        this.content.add(new logLine(Category));
     }
+
+    /*
+    public static void main (String[] args) {
+        LogPage lp = new LogPage();
+        lp.addLogLine("Poop");
+        System.out.println(lp.content.get(0).date);
+        System.out.println(lp.content.get(0).Category);
+    }
+    */
 }
+
+

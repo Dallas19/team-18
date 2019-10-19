@@ -45,6 +45,7 @@ public class Tree <T> {
         }
     }
 
+    /*
     public static void main (String[] args) {
         Tree<Integer> tree = new Tree<Integer>(5);
         tree.insert2NodesAfter(tree.root, 6, 7);
@@ -54,6 +55,7 @@ public class Tree <T> {
         tree.deleteNextOptions(tree.root.left);
         tree.printTree(tree.root);
     }
+    */
 }
 
 

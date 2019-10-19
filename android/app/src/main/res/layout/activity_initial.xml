@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <ImageButton
+        android:id="@+id/emergId"
+        android:onClick="leftPath"
+        android:text="Human Warning"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="#FFE502"
+        android:src="@drawable/icn_person"
+        />
+
+    <ImageButton
+        android:id="@+id/warnId"
+        android:onClick="rightPath"
+        android:text="Dog Need"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:background="#0000FF"
+        android:textColor="#FFFFFF"
+        android:src="@drawable/icn_dog"
+        />
+
+    <TextView
+        android:id="@+id/textId"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+</LinearLayout>

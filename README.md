@@ -12,3 +12,5 @@ Elisha Mabaje
 Dominick Miller 
 Joseph Chang
 John Gizdich
+
+The files are divided into Todo and Done to indicate which code are done and which are not

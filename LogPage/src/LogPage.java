@@ -2,13 +2,15 @@ import java.util.*;
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 
+// The LogPage defines the data structure of our logs. Ideally should be connected to the database.
 public class LogPage {
     ArrayList<logLine> content;
 
+    // initializes the arraylist
     public LogPage() {
         this.content = new ArrayList<logLine>();
     }
-
+    
     static class logLine {
         String date;
         String Category;
@@ -17,7 +19,7 @@ public class LogPage {
 
             DateTimeFormatter dtf =  DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
             date = dtf.format(LocalDateTime.now());
-            this.Category = Category; // might be a problem
+            this.Category = Category; 
         }
     }
 

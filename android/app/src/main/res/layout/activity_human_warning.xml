@@ -5,6 +5,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" >
     <Button
+        android:id="@+id/emergId"
         android:onClick="leftPath"
         android:text="Emergency"
         android:layout_height="match_parent"
@@ -14,6 +15,7 @@
         />
 
     <Button
+        android:id="@+id/warnId"
         android:onClick="rightPath"
         android:text="Seizure"
         android:layout_height="match_parent"
@@ -22,4 +24,14 @@
         android:background="#0000FF"
         android:textColor="#FFFFFF"
         />
+
+    <TextView
+        android:id="@+id/textId"
+        android:textSize="50dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
 </LinearLayout>

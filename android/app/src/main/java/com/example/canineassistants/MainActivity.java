@@ -14,8 +14,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void startApp(View view){
-        Intent intent = new Intent(this, FlowStartActivity.class);
+    public void leftPath(View view){
+        Intent intent = new Intent(this, HumanWarningActivity.class);
         startActivity(intent);
     }
+
+    public void rightPath(View view){
+        Intent intent = new Intent(this, DogActivity.class);
+        startActivity(intent);
+    }
+
 }

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.media.AudioManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.speech.tts.TextToSpeech;
@@ -32,7 +33,7 @@ public class HumanWarningActivity extends AppCompatActivity {
 
         text.setVisibility(View.VISIBLE);
         Intent intent = new Intent(Intent.ACTION_DIAL);
-
+        intent.setData(Uri.parse("tel:6038994210"));
         startActivity(intent);
         //AudioManager audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
     }

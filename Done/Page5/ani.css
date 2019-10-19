@@ -1,0 +1,23 @@
+button {
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  color: Blue;
+  background: none;
+  border-radius: 10px;
+  padding: 2.0em;
+  outline: none;
+  background-color: yellow;
+}
+
+.starting, .loading {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
